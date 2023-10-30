@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Words list{% endblock %}
+
+{% block content %}
+
+<section class="dictionary">
+    <table class="words_list">
+        <tr class="row">
+            <th class="cell">Original</th>
+            <th class="cell">Russian</th>
+        </tr>
+        {% for words in words_list %}
+            <tr class="row">
+                <td class="cell">{{ words.0 }}</td>
+                <td class="cell">{{ words.1 }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</section>
+
+{% endblock %}

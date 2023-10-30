@@ -1,0 +1,6 @@
+Chair-Кресло
+Keyboard-Клавиатура
+Dictionary-Словарь
+Terminal-Терминал
+Language-Язык
+Photo-Фотография
