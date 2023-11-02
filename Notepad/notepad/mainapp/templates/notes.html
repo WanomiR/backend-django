@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Notes{% endblock %}
+
+{% block content %}
+
+<section class="notes">
+    {% for note in notes %}
+    <p class="my-note">{{ note.text }}</p>
+    {% endfor %}
+</section>
+
+{% endblock %}

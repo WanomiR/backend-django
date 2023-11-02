@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Add note{% endblock %}
+
+{% block content %}
+
+<section class="add_note">
+    <form method="POST" class="form form_type_add-note">
+        <label for="note-text" class="form__label">Note text</label>
+        <input name="note-text" id="note-text" class="form__input" type="text" required>
+        {% csrf_token %}
+        <button type="submit" class="form__submit-button">Add note</button>
+    </form>
+</section>
+
+{% endblock %}
